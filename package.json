@@ -1,0 +1,36 @@
+{
+  "name": "store-parse-example",
+  "version": "1.0.0",
+  "description": "A Simple store parse project",
+  "main": "server.js",
+  "scripts": {
+    "start": "tsc && node server.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dashboard": "parse-dashboard --dev --appId myAppId --masterKey myMasterKey --serverURL http://localhost:1337/parse --port 8080 --appName Store"
+  },
+  "author": "Edmundo Vidaña Alvarez",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0",
+    "parse": "^2.8.0",
+    "parse-server": "^3.9.0"
+  },
+  "eslintIgnore": [
+    "cloud/build"
+  ],
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.12.3",
+    "@types/parse": "^2.2.14",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "parse-dashboard": "^2.0.5",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
